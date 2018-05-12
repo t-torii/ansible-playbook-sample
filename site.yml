@@ -7,4 +7,4 @@
     - nginx
     - serverspec
     - serverspec_sample
-#    - jenkins
+    - jenkins
