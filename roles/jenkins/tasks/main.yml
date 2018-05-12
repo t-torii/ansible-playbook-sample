@@ -8,11 +8,12 @@
     - libffi-dev
     - libncurses5-dev
 
-- name: add jenkins to repo
-  apt_repository: repo='deb http://pkg.jenkins-ci.org/debian binary/' state=present
-
 - name: import apt key
-  apt_key: url=http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key state=present
+  apt_key: url=https://pkg.jenkins.io/debian/jenkins.io.key state=present
+
+- name: add jenkins to repo
+  apt_repository: repo='deb https://pkg.jenkins.io/debian-stable binary/' state=present
+
 
 - name: install jenkins
   apt: name=jenkins state=present
