@@ -6,5 +6,5 @@
     - common
     - nginx
     - serverspec
-#    - serverspec_sample
+    - serverspec_sample
 #    - jenkins
